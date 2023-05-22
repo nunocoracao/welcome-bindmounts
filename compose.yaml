@@ -1,0 +1,8 @@
+services:
+  welcome-nginx:
+    image: nginx
+    container_name: server
+    ports:
+      - 8080:80
+    volumes:
+      - .:/usr/share/nginx/html
